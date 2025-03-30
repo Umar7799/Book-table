@@ -19,8 +19,8 @@ const Books = () => {
 
         try {
             const res = await fetch(
-                `http://localhost:5000/books?seed=${seed}&page=${currentPage}&language=${language}&likes=${likes}&reviews=${reviews}`
-            );
+                `https://book-table-ac40.onrender.com/books?seed=${seed}&page=${currentPage}&language=${language}&likes=${likes}&reviews=${reviews}`
+              );
             const data = await res.json();
 
             if (data.length === 0) {
